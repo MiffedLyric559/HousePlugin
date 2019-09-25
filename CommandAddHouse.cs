@@ -110,7 +110,7 @@ namespace Edsparr.Houseplugin
             }
             if(house == null)
             {
-                UnturnedChat.Say(player, "Couden't manage to find a level object where you are standing!", Color.red);
+                UnturnedChat.Say(player, "Couldn't manage to find a level object where you are standing!", Color.red);
                 return;
             }
             var incase = (Plugin.Instance.Configuration.Instance.Houses.Find(c => (c.id == house.asset.id)));

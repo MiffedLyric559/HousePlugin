@@ -23,7 +23,7 @@ namespace Edsparr.DisplaynameSaver
         public string GetDisplayName(CSteamID id)
         {
             var result = Edsparr.Houseplugin.Plugin.Instance.Configuration.Instance.Data.Find(c => (c.Player == (ulong)id));
-            if (result == null) return "USername not found";
+            if (result == null) return "Username not found";
             return result.Displayname;
         }
 

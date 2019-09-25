@@ -98,7 +98,7 @@ namespace Edsparr.Houseplugin
             Transform house = Plugin.Instance.getHouse(player.Position);
             if(house == null)
             {
-                UnturnedChat.Say(player, "Couden't manage to find a house where you're at!", Color.red);
+                UnturnedChat.Say(player, "Couldn't manage to find a house where you're at!", Color.red);
                 return;
             }
             if(Plugin.Instance.Configuration.Instance.BoughtHouses.Find(c => (c.house == house.position)) != null)

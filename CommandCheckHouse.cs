@@ -102,11 +102,11 @@ namespace Edsparr.Houseplugin
                  bfound = Plugin.Instance.Configuration.Instance.BoughtHouses.Find(c => (c.house == Plugin.Instance.getHouse(player.Position).position));
                  afound = Plugin.Instance.Configuration.Instance.Houses.Find(c => (c.id == Plugin.Instance.getHouseLevelObject(player.Position).id));
             }
-            catch { if (afound != null) { UnturnedChat.Say(player, "This house is not calimed and cost " + afound.cost + "!", Color.red); return; } UnturnedChat.Say(player, "Couden't manage to find a house here!", Color.red); return; }
+            catch { if (afound != null) { UnturnedChat.Say(player, "This house is not claimed and cost " + afound.cost + "!", Color.red); return; } UnturnedChat.Say(player, "Couldn't manage to find a house here!", Color.red); return; }
                 string final = "";
             if(bfound == null && afound != null)
             {
-                final = "This house is not calimed and cost " + afound.cost + "!";
+                final = "This house is not claimed and cost " + afound.cost + "!";
             }
             else if(bfound != null)
             {

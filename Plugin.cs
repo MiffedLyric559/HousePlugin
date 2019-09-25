@@ -27,21 +27,21 @@ namespace Edsparr.Houseplugin
 
         public static Plugin Instance;
         private DateTime n = DateTime.Now;
-        public static string Discord = "https://discord.gg/Q89FmUk";
+        public static string Discord = "https://discord.gg/GMkzQ5q";
 
         public override TranslationList DefaultTranslations
         {
             get
             {
                 return new TranslationList(){
-                {"nothing","No transeltions right now if requested they might get added."},
+                {"nothing","No translations right now if requested they might get added."},
                 };
             }
         }
 
         protected override void Load()
         {
-            Logger.Log("Plugin loaded Correctly. Fixed by educatalan02 - Support: " + Discord);
+            Logger.Log("Plugin loaded Correctly. Fixed by MiffedLyric559 - Support: " + Discord);
             Logger.Log("Version: " + Assembly.GetName().Version);
             Plugin.Instance = this;
             U.Events.OnPlayerConnected += OnConnected;

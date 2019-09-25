@@ -99,13 +99,13 @@ namespace Edsparr.Houseplugin
             var house = Plugin.Instance.getHouseFromObjects(player.Position);
             if(house == null)
             {
-                UnturnedChat.Say(player, "Couden't manage to find a level object where you are standing!", Color.red);
+                UnturnedChat.Say(player, "Couldn't manage to find a level object where you are standing!", Color.red);
                 return;
             }
             var incase = (Plugin.Instance.Configuration.Instance.Houses.Find(c => (c.id == house.asset.id)));
             if(incase == null)
             {
-                UnturnedChat.Say(player, "Couden't manage to find a house here that is registred!", Color.red);
+                UnturnedChat.Say(player, "Couldn't manage to find a house here that is registred!", Color.red);
                 return;
             }
                 
